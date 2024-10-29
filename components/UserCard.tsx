@@ -64,7 +64,7 @@ const UserCard: React.FC = () => {
 
   return (
     <div className={`flex flex-col items-center w-full p-3 ${inter.className}`}>
-      <div className="w-full max-w-[22rem] lg:max-w-[26rem] xl:max-w-[30rem] mx-auto p-4 bg-white shadow-lg rounded-lg hover:shadow-[0_0_15px_rgba(242,124,34,0.3)] transition duration-500 relative">
+      <div className="w-full min-w-[22rem] max-w-[35rem] lg:max-w-[40rem] mx-auto p-4 bg-white shadow-lg rounded-lg hover:shadow-[0_0_15px_rgba(242,124,34,0.3)] transition duration-500 relative">
         {/* Expand/Collapse Button */}
         {user && (
           <button
@@ -83,8 +83,8 @@ const UserCard: React.FC = () => {
                 alt={`${user.name.first} ${user.name.last}`}
                 className="w-20 h-24 object-cover rounded-xl shadow-lg hover:shadow-[0_0_10px_rgba(242,124,34,0.3)] transition-shadow duration-300 mb-3 md:mb-0"
               />
-              <div className="text-center md:text-left w-full pr-8 md:pr-12">
-                <h2 className="text-xl lg:text-2xl font-semibold tracking-wide flex items-center justify-center md:justify-start gap-2">
+              <div className="text-center md:text-left w-full pr-10 md:pr-14">
+                <h2 className="text-xl lg:text-2xl font-semibold tracking-wide flex items-center justify-center md:justify-start gap-2 overflow-hidden">
                   <span className="font-semibold whitespace-nowrap">
                     {`${user.name.title}.`}
                   </span>
